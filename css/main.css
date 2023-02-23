@@ -1,0 +1,190 @@
+:root{
+    --main-bkground-color: #EDEDED;
+    --main-fore-color: #fff;
+    --font-header-title-size: 20px;
+    --font-header-family: 'PT Mono';
+    --font-header-weight: 'bolder';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    position: relative;
+}
+
+header{
+    background-color: var(--main-bkground-color);
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
+
+.agenda{
+    background-color: var(--main-fore-color);
+    border-bottom-right-radius: 20px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    /* vertical-align: middle; */
+    width: 250px;
+}
+
+.lblAgenda{
+    font-size: var(--font-header-title-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-20px);
+}
+
+.perfil{
+    background-color: var(--main-fore-color);
+    border-bottom-left-radius: 20px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    position: absolute;
+    right: -10px;
+    top:0px;
+}
+
+.lblPerfil{
+    font-size: var(--font-header-title-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    top:50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.calendario{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-color: gray;
+    background-color: var(--main-fore-color);
+    top:45px;
+    height: 59px;
+    left: 50%;
+    padding: 10px;
+    width: 60%;
+    text-align: right;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
+
+.lblCalendario{
+    font-size: var(--font-header-title-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    top:30%;
+    position: absolute;
+    transform: translateY(-20%);
+    transform: translateX(-150%);
+}
+
+.center{
+    background-color: var(--main-fore-color);
+    height: 100%;
+    position: absolute;
+    width: 60%;
+    right: 20%;
+}
+.asideCalendar{
+    background-color: var(--main-fore-color);
+    border-style: solid;
+    border-right-color: var(--main-bkground-color);
+    border-top: none;
+    border-left:none;
+    border-bottom: none;
+    /* position: absolute; */
+    float: left;
+    height: 100%;
+    width: 20%;
+
+}
+
+.asideEventos{
+    background-color: var(--main-fore-color);
+    border-style: solid;
+    border-left-color: var(--main-bkground-color);
+    border-top: none;
+    border-right:none;
+    border-bottom: none;
+    float: right;
+    height: 100%;
+    position: relative;
+    width: 20%;
+
+}
+
+/* Icons */
+.agenda > .iconAgenda-button{
+    cursor: pointer;
+    filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
+    position: absolute;
+    width: 13px;
+    float: right;
+    top: 40%;
+    transform: translateX(470%) rotate(180deg);
+}
+
+.agenda > .iconAgenda-calendar{
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    /* float: left; */
+    top: 15%;
+    right: 180px;
+}
+
+.perfil > .iconAgenda-button{
+    cursor: pointer;
+    filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
+    position: absolute;
+    width: 13px;
+    float: right;
+    top: 40%;
+    transform: translateX(470%) rotate(180deg);
+}
+
+.calendario > .iconAgenda-button{
+    cursor: pointer;
+    filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
+    position: absolute;
+    width: 13px;
+    float: right;
+    top: 40%;
+    transform: translateX(-150%) rotate(180deg);
+}
+
+.header-eventos{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    float: right;
+    
+}
+
+.header-eventos-edit{
+    cursor: pointer;
+    /* margin-top: 3px; */
+}
+
+.header-eventos-close{
+    cursor: pointer;
+    filter: invert(43%) sepia(0%) saturate(3242%) hue-rotate(348deg) brightness(102%) contrast(98%);
+    margin: 15px;
+    width: 16px;
+}

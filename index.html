@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Ilse</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <script src="./js/calendar.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="agenda">
+            <label class="lblAgenda">Agenda</label>
+            <img class="iconAgenda-button" src="./icons/circle-chevron-up-solid.svg" >
+            <img class="iconAgenda-calendar" src="./icons/calendar.svg" >
+        </div>
+        <div class="calendario">
+            <label class="lblCalendario">Calendario</label>
+            <img class="iconAgenda-button" src="./icons/circle-chevron-up-solid.svg" >
+        </div>
+        <div class="perfil">
+            <label class="lblPerfil">Perfil</label>
+            <img class="iconAgenda-button" src="./icons/circle-chevron-up-solid.svg" >
+        </div>
+    </header>
+    <aside class="asideCalendar">
+        <div class="calendar-wrapper">
+            <div class="calendar-header">
+                <p class="current-date"></p>
+                <div class="icons">
+                    <img id="prev" src="./icons/angle-right-solid.svg">
+                    <img id="next" src="./icons/angle-right-solid.svg">
+                </div>
+            </div>
+            <div class="calendar">
+            <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+            </div>
+        </div>
+    </aside>
+    <section class="center">
+        
+    </section>
+    
+    <aside class="asideEventos">
+        <div class="header-eventos">
+            <img class="header-eventos-edit" src="./icons/pencil.svg">
+            <img class="header-eventos-close" src="./icons/close.svg">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>Nombre de evento</label>
+        </div>
+       
+    </aside>
+</body>
+</html>
