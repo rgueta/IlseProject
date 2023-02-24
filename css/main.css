@@ -10,25 +10,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* height: 100%; */
     width: auto;
 }
 
 html{
     height: 100%;
+    width: 100%;
 }
 
 body{
     height: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 header{
     background-color: var(--main-bkground-color);
     height: 75px;
     width: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
+.mainWrapper{
+    background-color: var(--main-bkground-color);
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+}
+
+/* Agenda ----------------------- -------------------- */
 .agenda{
     background-color: var(--main-fore-color);
     border-bottom-right-radius: 20px;
@@ -48,14 +58,15 @@ header{
     transform: translateY(-50%) translateX(-20px);
 }
 
+/* Perfil  --------------------------------------------------- */
+
 .perfil{
     background-color: var(--main-fore-color);
     border-bottom-left-radius: 20px;
     height: 50px;
     text-align: center;
     width: 250px;
-    position: absolute;
-    right: -10px;
+    float: right;
     top:0px;
 }
 
@@ -63,15 +74,15 @@ header{
     font-size: var(--font-header-title-size);
     font-family: var(--font-family);
     font-weight: var(--font-header-weight);
-    top:50%;
-    position: absolute;
-    transform: translateY(-50%);
+    position: relative;
+    top: 12px;
 }
+
+/* Calendario  ------------------------------------------------- */
 
 .calendario{
     border-top-left-radius:20px;
     border-top-right-radius:20px;
-    border-bottom-color: gray;
     background-color: var(--main-fore-color);
     top:45px;
     height: 59px;
@@ -84,6 +95,8 @@ header{
     
 }
 
+
+
 .lblCalendario{
     font-size: var(--font-header-title-size);
     font-family: var(--font-family);
@@ -94,42 +107,115 @@ header{
     transform: translateX(-150%);
 }
 
+/* Center  -------------------------------------------------------- */
+
 .center{
     background-color: var(--main-fore-color);
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color:var(--main-bkground-color);
     height: 100%;
-    position: absolute;
-    width: 60%;
-    right: 20%;
+    position:relative;
+    width: 50.4%;
+    left: 24.5%;
 }
+
+/* Calendar  -------------------------------------------------  */
 .asideCalendar{
     background-color: var(--main-fore-color);
-    border-style: solid;
-    border-right-color: var(--main-bkground-color);
+    border-top-left-radius: 20px;
+    margin-left: 12px;
+    /* border-style: solid; */
+    /* border-right-color: var(--main-bkground-color); */
+    /* border-right-color: red; */
     border-top: none;
     border-left:none;
     border-bottom: none;
-    /* position: absolute; */
+    left: 10px;
     float: left;
+    padding: 10px;
     height: 100%;
-    width: 20%;
-
+    top: 0;
+    width: 23.7%;
 }
+
+        /* Etiquetas  ------------------------------------------- */
+
+.headerEtiquetas{
+    margin: 20px 20px 0px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pEtiquetas{
+    font-size: 1.1rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    margin-left: 15px;
+}
+
+.Etiquetas img{
+    width: 8px;
+}
+
+.Etiquetas ul li img{
+    margin: 5px;
+    filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
+    width: 16px;
+}
+
+.Etiquetas ul li{
+    display: flex;
+    margin-left: 10px;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.Etiquetas ul li a{
+    font-size: 1rem;
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    margin: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+/* Eventos ----------------------------- */
 
 .asideEventos{
     background-color: var(--main-fore-color);
     border-style: solid;
-    border-left-color: var(--main-bkground-color);
+    /* border-left-color: var(--main-bkground-color); */
     border-top: none;
     border-right:none;
     border-bottom: none;
+    border-top-right-radius:20px ;
+    /* left: 69%; */
+    margin-right: 12px;
     float: right;
     height: 100%;
-    position: relative;
-    width: 20%;
+    /* position: relative; */
+    /* top:-110px; */
+    width: 25%;
 
 }
 
-/* Icons */
+.header-eventos{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    
+}
+
+.Eventos{
+    font-size: var(--font-header-title-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-header-weight);
+    margin: 10px;
+    height: 100%;
+}
+
+
+/* Icons ------------------------------------  */
 .agenda > .iconAgenda-button{
     cursor: pointer;
     filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
@@ -155,30 +241,23 @@ header{
     position: absolute;
     width: 13px;
     float: right;
-    top: 40%;
-    transform: translateX(470%) rotate(180deg);
+    top: 18px;
+    transform: translateX(23px) rotate(180deg);
 }
 
 .calendario > .iconAgenda-button{
     cursor: pointer;
     filter: invert(67%) sepia(21%) saturate(456%) hue-rotate(234deg) brightness(87%) contrast(92%);
-    position: absolute;
     width: 13px;
     float: right;
-    top: 40%;
-    transform: translateX(-150%) rotate(180deg);
+    transform: translateX(-15px) translateY(13px) rotate(180deg);
 }
 
-.header-eventos{
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
-    float: right;
-    
-}
+
 
 .header-eventos-edit{
     cursor: pointer;
+    width: 14px;
     /* margin-top: 3px; */
 }
 
@@ -186,5 +265,5 @@ header{
     cursor: pointer;
     filter: invert(43%) sepia(0%) saturate(3242%) hue-rotate(348deg) brightness(102%) contrast(98%);
     margin: 15px;
-    width: 16px;
+    width: 12px;
 }

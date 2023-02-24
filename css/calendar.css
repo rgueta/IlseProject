@@ -40,6 +40,7 @@
   font-weight: 1000;
 }
 .calendar{
+  margin-left: 15px;
   padding: 2px;
 }
 .calendar ul{
@@ -59,12 +60,14 @@
 .calendar .weeks li{
   font-weight: 500;
   cursor: default;
+  margin-left: -3px;
 }
 .calendar .days li{
   z-index: 1;
   cursor: pointer;
   position: relative;
   margin-top: 9px;
+  margin-left: -3px;
 }
 .days li.inactive{
   color: #aaa;
